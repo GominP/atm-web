@@ -24,7 +24,6 @@ public class BankAccountService {
         String url = "http://localhost:8091/api/bankaccount";
         restTemplate.postForObject(url, bankAccount, BankAccount.class);
     }
-
     public List<BankAccount> getCustomerBankAccounts(int customerId) {
         // connect to BankAccount API Service
         String url = "http://localhost:8091/api/bankaccount/customer/" + customerId;
